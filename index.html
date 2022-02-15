@@ -4,21 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,11 +18,70 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
+
+      <div class="row time-block">
+        <div class="col-1 hour">9am</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">10am</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">11am</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">12pm</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">1pm</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">2pm</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">3pm</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">4pm</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-1 hour">5pm</div>
+        <textarea class="col-10 description"></textarea>
+        <button type="button" class="col-1 btn saveBtn"><i class="bi bi-save2-fill"></i></button>
+      </div>
+
+
+
+
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
