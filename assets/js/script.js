@@ -3,12 +3,32 @@
 var today = moment().format("dddd, MMMM Do");
 $("#currentDay").append(today);
 
-// scroll down for timeblocks for standard business hours (9-5)
-
 // each timeblock is color-coded for past, present, or future 
 
-// open timeblock to enter an event 
+var curHr = moment().hour();
 
-// save event entered in localStorage 
+$("textarea").each(function(index, element) {
 
-// refreshing the page - events stay 
+    if (this.id == curHr) {
+        $(this).addClass("present");
+    }
+    else if (this.id < curHr) {
+        $(this).addClass("past");
+    }
+    else if (this.id > curHr) {
+        $(this).addClass("future");
+    };
+}); 
+
+// save task to local storage on saveBtn click 
+
+$(".saveBtn").on("click", function() {
+
+    var saveRow = $(this).parent().attr("id");
+    var task = $(this).siblings(".description").val();
+
+    localStorage.setItem(saveRow, task);
+});
+
+// get items from localStorage
+
